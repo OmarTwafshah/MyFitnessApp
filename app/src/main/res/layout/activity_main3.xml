@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="609dp"
+        android:layout_height="729dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/secondphoto"
+
+        />
+
+   <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*">
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:text="@string/weight"
+
+                android:textColor="@color/white"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="200dp"
+                android:layout_marginTop="60dp"
+                android:hint="@string/weight_kg"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+
+
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="@string/height"
+
+                android:textColor="@color/white"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="200dp"
+                android:layout_marginTop="30dp"
+                android:hint="height (m)"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/buttonToCalculate"
+                android:text="@string/calculate"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:onClick="CalculateOnClick"
+
+                />
+
+        </TableRow>
+
+       <TableRow>
+
+           <EditText
+               android:id="@+id/TheBMINumber"
+               android:hint="@string/bmi_in_number"
+               android:layout_marginTop="30dp"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/white"
+               android:textColor="@color/white"
+               android:minHeight="48dp"
+               />
+
+           <EditText
+               android:id="@+id/TheBMIWord"
+               android:hint="@string/bmi_in_word"
+               android:layout_marginTop="30dp"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/white"
+               android:textColor="@color/white"
+               android:minHeight="48dp"
+               />
+
+       </TableRow>
+
+       <TableRow>
+
+           <Button
+               android:id="@+id/buttonToSave"
+               android:text=" Save "
+               android:layout_marginTop="30dp"
+               android:layout_gravity="center"
+               android:onClick="SaveDataOnClick"
+
+               />
+
+           <Button
+               android:id="@+id/buttonToLoad"
+               android:text=" Load "
+               android:layout_marginTop="30dp"
+               android:layout_gravity="center"
+               android:onClick="LoadDataOnClick"
+               />
+
+       </TableRow>
+
+
+    </TableLayout>
+
+</FrameLayout>

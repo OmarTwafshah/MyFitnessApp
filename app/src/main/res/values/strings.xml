@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Your Fitness</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="welcome_to_your_fitness">Welcome To Your Fitness</string>
+    <string name="enter_the_number_of_months_to_find_out_its_price">Enter the number of months to find out its price :</string>
+    <string name="enter_here_number_of_month_just">Enter Here Number Of month just</string>
+    <string name="find_price">Find Price</string>
+    <string name="if_you_want_now_select_one_choice_form_these_choices">If you want now select one choice form these choices</string>
+    <string name="go_to_your_select">Go To Your Select</string>
+    <string name="weight">Weight:</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height">Height :</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi_in_number">BMI in number</string>
+    <string name="bmi_in_word">BMI in Word</string>
+</resources>

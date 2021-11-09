@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_your_fitness"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="10pt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/enter_the_number_of_months_to_find_out_its_price"
+
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/numberOfMonths"
+        android:hint="@string/enter_here_number_of_month_just"
+        android:textColorHint="@color/white"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="@string/find_price"
+        android:id="@+id/FindPrice"
+        android:onClick="FindPriceOnClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:text="@string/if_you_want_now_select_one_choice_form_these_choices"
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/white"
+        android:text="@string/go_to_your_select"
+        android:id="@+id/GoSelect"
+        android:onClick="GoSelectOnClick"/>
+
+
+</LinearLayout>
